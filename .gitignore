@@ -7,3 +7,10 @@ __pycache__/
 *.pyc
 .DS_Store
 .env/
+.env
+*.pyo
+*.pyd
+.venv/
+.vscode/
+.DS_Store
+
