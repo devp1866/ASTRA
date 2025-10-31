@@ -1,0 +1,9 @@
+# Environment & Secrets
+.env
+
+# Streamlit cache and logs
+.streamlit/
+__pycache__/
+*.pyc
+.DS_Store
+.env/
