@@ -1,0 +1,15 @@
+[theme]
+base = "dark"
+primaryColor = "#4A90E2"
+backgroundColor = "#011222"
+secondaryBackgroundColor = "#0B2545"
+textColor = "#EAF0F6"
+font = "inter"
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
+
+[ui]
+hideTopBar = true
