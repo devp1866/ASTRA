@@ -5,7 +5,7 @@ from utils.memory_manager import create_new_session, get_recent_messages, clear_
 import time
 
 st.set_page_config(
-    page_title="ASTRA | AI Support & Task Response Assistant",
+    page_title="ASTRA | Advanced Support & Task Response Assistant",
     page_icon="🤖",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -420,7 +420,7 @@ with st.sidebar:
 # ==================== MAIN HEADER ====================
 st.markdown("""
 <div class="app-header">
-    <h1>🤖 ASTRA - AI Support & Task Response Assistant</h1>
+    <h1>🤖 ASTRA - Advanced Support & Task Response Assistant</h1>
     <p>Your intelligent, memory-powered customer support agent</p>
 </div>
 """, unsafe_allow_html=True)
@@ -474,7 +474,7 @@ if st.session_state.conversation_active:
             with st.chat_message("user"):
                 st.markdown(user_input)
             
-            farewell_msg = "👋 Thank you for using ASTRA-AI! The conversation has ended. Click '🆕 Start New Session' in the sidebar to start a new conversation."
+            farewell_msg = "👋 Thank you for using ASTRA! The conversation has ended. Click '🆕 Start New Session' in the sidebar to start a new conversation."
             with st.chat_message("assistant"):
                 st.markdown(farewell_msg)
             st.session_state.messages.append({"role": "assistant", "content": farewell_msg})

@@ -459,7 +459,7 @@ with col1:
     # About ASTRA-AI Section
     st.markdown("""
     <div class="info-card">
-        <h2>🚀 ASTRA : AI Support & Task Response Assistant</h2>
+        <h2>🚀 ASTRA : Advanced Support & Task Response Assistant</h2>
         <p>
             ASTRA is a next-generation conversational AI assistant designed to revolutionize 
             customer support and task management.
