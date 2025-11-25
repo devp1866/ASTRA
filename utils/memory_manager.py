@@ -58,7 +58,6 @@ def get_recent_messages(session_id: str, limit: int = 5):
 
 # utilities
 def count_session_messages(session_id: str):
-    """Return total number of messages in a session."""
     try:
         return chats.count_documents({"session_id": session_id})
     except Exception as e:
