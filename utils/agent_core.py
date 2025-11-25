@@ -63,10 +63,6 @@ def detect_intent_llm(user_input, context=""):
 
 # Conversational Agent with Adaptive Memory
 def handle_query_with_memory(session_id, user_input):
-    """
-    Handles a query with memory, intent, tone adaptation, and logging.
-    The agent evolves over conversation — remembering past context naturally.
-    """
     
     memory = get_memory(session_id) # Retrieve previous memory
     context = "\n".join([f"{m['role']}: {m['message']}" for m in memory[-6:]]) if memory else ""
@@ -75,7 +71,7 @@ def handle_query_with_memory(session_id, user_input):
     intent = detect_intent_llm(user_input, context) # Detect user intent
 
     system_prompt = f"""
-    You are **Aura**, an empathetic, human-like AI support assistant with a warm personality.
+    You are **ASTRA**, an empathetic, human-like AI support assistant with a warm personality.
     You remember what users said earlier, learn from each chat, and improve your responses.
     
     💬 Personality Traits:
